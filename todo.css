@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f5eaea;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #f7dcdc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 75%;
+}
+
+.profile h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.profile p {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #e1dcdc;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bba5a5;
+  padding: 10px 20px;
+  color: white;
+}
+
+.topbar h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.top-icons button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  margin-left: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.tasks {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  justify-content: space-around;
+  position: relative;
+}
+
+.tasks::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #aaa;
+}
+
+.tasks h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.todo,
+.completed {
+  width: 45%;
+}
+
+.task {
+  background-color: #8c5c5c;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f2dcdc;
+}
+
+.bottom input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.add-task {
+  background-color: #8c5c5c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
